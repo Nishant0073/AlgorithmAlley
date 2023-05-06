@@ -9,8 +9,7 @@
  *     ListNode(int x) : val(x), next(nullptr) {}
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
-
- https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
+ 
 
 
 Two Pointer approch
