@@ -5,17 +5,10 @@ class UnionFind {
     }
 
     int Find(int x) {
-        int temp = x;
-        while (temp != parent[temp]) {
-            temp = parent[temp];
-        }
-		// Path compression below
-        while (x != temp) {
-            int next = parent[x];
-            parent[x] = temp;
-            x = next;
-        }
-        return x;
+         if (parent[x] == x) {
+                return x;
+	 }
+            return parent[x] = Find(parent[x]);
     }
 
     void Union(int x, int y) {
