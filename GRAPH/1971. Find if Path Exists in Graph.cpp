@@ -23,7 +23,7 @@ class UnionFind
     {
         int tmp = x;
         while(tmp!=v[tmp])
-            tmp = v[tmp];
+            tmp = v[tmp]
         
         //path compression
         while(x!=tmp)
